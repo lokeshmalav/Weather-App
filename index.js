@@ -90,6 +90,7 @@ getfromSessionStorage();
         const {lat, lon} = coordinates;
         // make grant container invisible 
         grantAccessContainer.classList.remove("active");
+        notFoundContainer.classList.remove("active");
         // maker loader visible
         loadingScreen.classList.add("active");
 
