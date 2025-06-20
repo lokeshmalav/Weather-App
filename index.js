@@ -39,6 +39,7 @@ getfromSessionStorage();
         searchForm.classList.remove("active");
         userInfoContainer.classList.remove("active");
         grantAccessContainer.classList.remove("active");
+        notFoundContainer.classList.remove("avtive");
 
         // Show location weather info
         getfromSessionStorage();
@@ -75,6 +76,7 @@ getfromSessionStorage();
       const localCoordinates = sessionStorage.getItem("user-coordinates");
 
       if(!localCoordinates){
+        notFoundContainer.classList.remove("active");
         grantAccessContainer.classList.add("active");
 
       }
